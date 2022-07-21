@@ -1,0 +1,7 @@
+RewriteEngine On
+
+# Handle Front Controller...
+RewriteCond %{REQUEST_FILENANE} !-d
+RewriteCond %{REQUEST_FILENANE} !-f 
+RewriteRule ^ index.php [L]
+
